@@ -26,7 +26,6 @@ cd RLQuadrotorProject
 git submodule init
 git submodule update
 ```
-may take a while.
 
 
 4. Compile
