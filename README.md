@@ -19,14 +19,14 @@ Host pi
 ```
 
 
-3. Download
+3. Download (may take a while)
 ```bash
 git clone <RLQuadrotorProject.git>
 cd RLQuadrotorProject
 git submodule init
 git submodule update
 ```
-This may take a while.
+may take a while.
 
 
 4. Compile
