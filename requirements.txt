@@ -4,3 +4,4 @@ empy
 numpy
 toml
 pyyaml
+future

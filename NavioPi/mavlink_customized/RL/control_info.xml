@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<mavlink>
+  <version>1</version>
+  <messages>
+    <message id="0" name="NN_LIB_INFO">
+      <description>update nn shared obj</description>
+      <field type="uint64_t" name=" D_timestamp">delta t</field>
+      <field type="char[128]" name="dir">new directory of nn shared obj</field>
+    </message>
+
+    <message id="1" name="CONTROL_INFO">
+      <description>state action pair</description>
+      <field type="uint64_t" name="timestamp">timestamp</field>
+      <field type="float[4]" name="quaternion">quaternion</field>
+      <field type="float[3]" name="position">position</field>
+      <field type="float[3]" name="angular_velocity">angular velocity</field>
+      <field type="float[3]" name="velocity">velocity</field>
+      <field type="float[3]" name="control_h">high level control</field> 
+      <field type="float[4]" name="control_l">low level control</field>
+      <field type="float[3]" name="local_position">local position</field>
+      <field type="float[3]" name="position_sp">position set point</field>
+      <field type="float[1]" name="voltage">voltage</field>
+    </message>   
+  </messages>
+</mavlink>
