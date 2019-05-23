@@ -19,12 +19,17 @@ Host pi
 ```
 
 
-3. Download and Compile
+3. Download (may take a while)
 ```bash
 git clone <RLQuadrotorProject.git>
 cd RLQuadrotorProject
 git submodule init
 git submodule update
+```
+
+
+4. Compile
+```bash
 python3 -m venv QUAD_RL
 echo "export PATH=\${PATH}:${PWD}/NavioPi/rpi-tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin" >> QUAD_RL/bin/activate
 source QUAD_RL/bin/activate
