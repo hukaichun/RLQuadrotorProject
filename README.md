@@ -1,5 +1,5 @@
 # RL-PX4 Project
-
+**work in progress**
 ## Minimum install
 1. Dependence
 ```bash
@@ -43,3 +43,26 @@ make emlid_navio2_rl_cross upload
 ssh pi
 sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
 ```
+
+## Running remote_monitor
+**work in progress**
+1. Run hrl_control
+```bash
+ssh pi
+sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
+pxh> hrl_control register_partner <id> <ip> <port> #e.g. 0 192.168.1.255 9487  
+```
+  -  -note-
+      1. <id> is not importent so far
+      2. <ip> is the ip of computer which running monitor
+      3. <port> is port
+
+2. Run monitor
+```bash
+cd <RLQuadrotorProject>
+source QUAD_RL/bin/activate
+pip3 install -I ./Simulator
+cd Simulator/quad/remote_monitor
+python3 monitor.py
+```
+
