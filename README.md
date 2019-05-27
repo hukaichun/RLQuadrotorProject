@@ -23,7 +23,9 @@ Host pi   # this name `pi` is importent
 ```bash
 git clone <RLQuadrotorProject.git>
 cd RLQuadrotorProject
-git submodule update --init --recursive
+git checkout docking_NavioPi_Simulator
+git submodule init
+git submodule update
 ```
 
 
