@@ -53,9 +53,9 @@ sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
 pxh> hrl_control register_partner <id> <ip> <port> #e.g. 0 192.168.1.255 9487  
 ```
   -  -note-
-      1. <id> is not importent so far
-      2. <ip> is the ip of computer which running monitor
-      3. <port> is port
+      1. \<id\> is not importent so far
+      2. \<ip\> is the ip of computer which running monitor
+      3. \<port\> is port
 
 2. Run monitor
 ```bash
