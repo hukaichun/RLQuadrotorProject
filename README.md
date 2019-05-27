@@ -50,7 +50,7 @@ sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
 ```bash
 ssh pi
 sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
-pxh> hrl_control register_partner <id> <ip> <port> #e.g. 0 192.168.1.255 9487  
+pxh> hrl_control register_partner <id> <ip> <port> #e.g. 0 192.168.1.255 8889  
 ```
   -  -note-
       1. \<id\> is not importent so far
