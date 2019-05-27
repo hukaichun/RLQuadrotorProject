@@ -11,7 +11,7 @@ sudo apt install xxd -y
 2. Setup ssh config
 e.g.
 ```hash
-Host pi
+Host pi   # this name `pi` is importent
   Hostname     <IP>
   User         <USER>
   Port         <PORT>
@@ -23,8 +23,7 @@ Host pi
 ```bash
 git clone <RLQuadrotorProject.git>
 cd RLQuadrotorProject
-git submodule init
-git submodule update
+git submodule update --init --recursive
 ```
 
 
@@ -35,5 +34,12 @@ echo "export PATH=\${PATH}:${PWD}/NavioPi/rpi-tools/arm-bcm2708/gcc-linaro-arm-l
 source QUAD_RL/bin/activate
 pip3 install -r requirements.txt
 cd NavioPi/Firmware
-make emlid_navio2_cross upload
+make emlid_navio2_rl_cross upload
+```
+
+
+5. Running
+```bash
+ssh pi
+sudo emlid_navio2_rl_cross/bin/px4 -s hrl_control.config
 ```
