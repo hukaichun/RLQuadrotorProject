@@ -30,6 +30,30 @@ git submodule update
 
 
 4. Compile
+
+
+**UPLOAD NEURAL NETWORK**
+In
+```bash
+<RLQuadrotorProject>/NavioPi/Firmware/src/modules/hrl_control/CMakeLists.txt
+```
+Edit:
+```bash
+execute_process(COMMAND
+                    make
+                WORKING_DIRECTORY
+                    <RLQuadrotorProject>/NavioPi/Firmware/src/modules/hrl_control/neural_network)
+```
+This will upload the neural network at first execute cmake
+
+or you can just run
+```bash
+cd <RLQuadrotorProject>/NavioPi/Firmware/src/modules/hrl_control/neural_network
+make
+```
+
+
+Compile
 ```bash
 python3 -m venv QUAD_RL
 echo "export PATH=\${PATH}:${PWD}/NavioPi/rpi-tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin" >> QUAD_RL/bin/activate
