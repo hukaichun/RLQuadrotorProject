@@ -1,15 +1,15 @@
 [submodule "NavioPi/Firmware"]
 	path = NavioPi/Firmware
-	url = https://github.com/john40532/Firmware.git
+	url = git@github.com:john40532/Firmware.git
 [submodule "NavioPi/rpi-tools"]
 	path = NavioPi/rpi-tools
-	url = https://github.com/hukaichun/tools.git
+	url = git@github.com:hukaichun/tools.git
 [submodule "NavioPi/mavlink"]
 	path = NavioPi/mavlink
 	url = https://github.com/mavlink/mavlink.git
 [submodule "RinforecmentLearning"]
 	path = ReinforcementLearning
-	url = http://github.com/hukaichun/rl.git
+	url = git@github.com:hukaichun/rl.git
 [submodule "Simulator"]
 	path = Simulator
-	url = http://github.com/hukaichun/quad.git
+	url = git@github.com:hukaichun/quad.git
