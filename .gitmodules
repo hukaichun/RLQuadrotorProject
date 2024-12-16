@@ -1,6 +1,6 @@
 [submodule "NavioPi/Firmware"]
 	path = NavioPi/Firmware
-	url = git@github.com:john40532/Firmware.git
+	url = git@github.com:hukaichun/Firmware.git
 [submodule "NavioPi/rpi-tools"]
 	path = NavioPi/rpi-tools
 	url = git@github.com:hukaichun/tools.git
