@@ -1,5 +1,28 @@
 # RL-PX4 Project
-**work in progress**
+
+This is a **legacy repostory** and was designed for applying an RL control policy to control a quadrotor.
+
+This repostory consists of three part:
+- **NavioPi**: the quadrotor operating system
+- **ReinforcementLearning**: the RL algorithm for training a quadrotor controller
+- **Simulator**: the quadrotor simulator
+
+while **rpi-tools** is the cross compiler for compile rpi binary executable file. 
+The learning algorithm and the simulator is builded by python code while the quadrotor OS is builded by C++.
+The practical control policy can be founded in 
+- NavioPi/Firmware/src/modules/mc_rl_control
+- NavioPi/Firmware/src/modules/hrl_control
+
+> note: hrl_control is a refactored version of mc_rl_control.
+
+
+
+
+## Device
+- Raspberry Pi
+- EMLID flight control board
+
+
 ## Minimum install
 1. Dependence
 ```bash
